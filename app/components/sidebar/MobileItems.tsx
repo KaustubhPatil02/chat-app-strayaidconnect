@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import clsx from "clsx";
+import { BsHddRack } from "react-icons/bs";
 
 interface MobileItemsProps {
     href: string;
@@ -9,6 +10,7 @@ interface MobileItemsProps {
     icon: any;
     active: boolean;
     onClick?: () => void;
+    // onabort?: () => void;
 }
 
 const MobileItems: React.FC<MobileItemsProps> = ({
@@ -17,7 +19,13 @@ const MobileItems: React.FC<MobileItemsProps> = ({
     icon: Icon,
     active,
     onClick,
+    // onabort,
 }) => {
+    // const handleShit = () =>{
+    //     if(onabort) {
+    //         return onabort();
+    //     }
+    // }
 
     const handleClick = () => {
         if(onClick) {
@@ -51,3 +59,4 @@ const MobileItems: React.FC<MobileItemsProps> = ({
 };
 
 export default MobileItems;
+ 
