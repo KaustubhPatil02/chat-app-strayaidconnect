@@ -6,7 +6,7 @@ import useRoutes from "@/app/hooks/useRoutes";
 import Avatar from "../Avatar";
 import { User } from "@prisma/client";
 import DesktopItem from "./DesktopItem";
-import SettingsModal from "./SettingsModal";
+// import SettingsModal from "./SettingsModal";
 
 interface DesktopSidebarProps {
     currentUser: User
