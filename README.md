@@ -1,3 +1,35 @@
+
+  ### Setup .env file
+
+
+```js
+DATABASE_URL=
+NEXTAUTH_SECRET=
+
+NEXT_PUBLIC_PUSHER_APP_KEY=
+PUSHER_APP_ID=
+PUSHER_SECRET=
+
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=
+
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+```
+
+### Setup Prisma
+
+```shell
+npx prisma db push
+
+```
+Url's for setup API keys and secret in .env
+```
+https://pusher.com/ - pusher
+https://cloudinary.com/ -image upload cloudinary
+https://console.cloud.google.com/apis/credentials - oauth sigin google
+https://cloud.mongodb.com/ - database
+```
+
 Key Features:
 
 - Real-time messaging using Pusher
@@ -20,30 +52,3 @@ Key Features:
 - How to fetch data in server React components by directly accessing the database (WITHOUT API! like Magic!)
 - Handling relations between Server and Child components in a real-time environment
 - Creating and managing chat rooms and channels
-
-  ### Setup .env file
-
-
-```js
-DATABASE_URL=
-NEXTAUTH_SECRET=
-
-NEXT_PUBLIC_PUSHER_APP_KEY=
-PUSHER_APP_ID=
-PUSHER_SECRET=
-
-NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=
-
-GITHUB_ID=
-GITHUB_SECRET=
-
-GOOGLE_CLIENT_ID=
-GOOGLE_CLIENT_SECRET=
-```
-
-### Setup Prisma
-
-```shell
-npx prisma db push
-
-```
