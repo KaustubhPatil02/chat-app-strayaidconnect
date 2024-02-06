@@ -34,18 +34,17 @@ Key Features:
 
 - Real-time messaging using Pusher
 - Message notifications and alerts
-- Tailwind design for sleek UI
 - Tailwind animations and transition effects
+- Tailwind design for sleek UI
 - Full responsiveness for all devices
-- Credential authentication with NextAuth
 - Google authentication integration
-- Github authentication integration
+- Credential authentication with NextAuth
 - File and image upload using Cloudinary CDN
 - Client form validation and handling using react-hook-form
 - Server error handling with react-toast
-- Message read receipts
 - Online/offline user status
-- Group chats and one-on-one messaging
+- Message read receipts
 - Message attachments and file sharing
-- User profile customization and settings
+- Group chats and one-on-one messaging
 - Creating and managing chat rooms and channels
+- User profile customization and settings
