@@ -16,7 +16,7 @@ const Auth = () => {
       "
     >
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
-        
+       
         <h2 
           className="
             mt-6 
@@ -27,11 +27,11 @@ const Auth = () => {
             text-gray-900
           "
           >
-            StrayAid-Connect
+            StrayAidConnect
         </h2>
-        <p className="text-center font-l font-semibold py-0 ">
+        <h3 className="text-center ">
           Chatrooms
-        </p>
+        </h3>
       </div>
       <AuthForm />      
   </div>
