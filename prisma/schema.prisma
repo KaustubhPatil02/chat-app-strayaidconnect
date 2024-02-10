@@ -23,8 +23,8 @@ model User {
   conversationIds String[] @db.ObjectId
   conversations Conversation[] @relation(fields: [conversationIds], references: [id])
   
-  seenMessageIds String[] @db.ObjectId
-  seenMessages Message[] @relation("Seen", fields: [seenMessageIds], references: [id])
+  // seenMessageIds String[] @db.ObjectId
+  // seenMessages Message[] @relation("Seen", fields: [seenMessageIds], references: [id])
 
   accounts Account[]
   messages Message[]
@@ -54,7 +54,7 @@ model Conversation {
   createdAt       DateTime @default(now())
   lastMessageAt DateTime @default(now())
   name String?
-  isGroup Boolean?
+  // isGroup Boolean?
   
   messagesIds String[] @db.ObjectId
   messages Message[]

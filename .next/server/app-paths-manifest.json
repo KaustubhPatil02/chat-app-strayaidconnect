@@ -2,10 +2,8 @@
   "/not-found": "app/not-found.js",
   "/(site)/page": "app/(site)/page.js",
   "/api/conversations/[conversationId]/seen/route": "app/api/conversations/[conversationId]/seen/route.js",
-  "/api/messages/route": "app/api/messages/route.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/conversations/page": "app/conversations/page.js",
   "/Users/page": "app/Users/page.js",
-  "/conversations/[conversationId]/page": "app/conversations/[conversationId]/page.js",
-  "/conversations/page": "app/conversations/page.js"
+  "/conversations/[conversationId]/page": "app/conversations/[conversationId]/page.js"
 }
