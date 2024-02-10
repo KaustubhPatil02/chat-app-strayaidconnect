@@ -1,5 +1,7 @@
 import getUsers from "../actions/getUsers";
 import Sidebar from "../components/sidebar/Sidebar";
+import ChatroomList from "./components/ChatroomList";
+import GroupList from "./components/GroupList";
 import UserList from "./components/UserList";
 
 export default async function UsersLayout({
@@ -10,10 +12,11 @@ export default async function UsersLayout({
   const users = await getUsers();
 
   return (
-    // @ts-expect-error Server Component
     <Sidebar>
       <div className="h-full">
         <UserList items={users} />
+        {/* <GroupList items={users} /> */}
+        {/* <ChatroomList items={ChatroomList}/> */}
         {children}
       </div>
     </Sidebar>

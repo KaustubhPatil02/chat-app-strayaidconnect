@@ -17,6 +17,7 @@ interface SettingsModalProps {
   isOpen?: boolean;
   onClose: () => void;
   currentUser: User;
+  // name: string;
 }
 
 const SettingsModal: React.FC<SettingsModalProps> = ({ 
@@ -116,7 +117,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                   <CldUploadButton 
                     options={{ maxFiles: 1 }} 
                     onUpload={handleUpload} 
-                    uploadPreset="pgc9ehd5"
+                    uploadPreset="jwlatbzs"
                   >
                     <Button
                       disabled={isLoading}
