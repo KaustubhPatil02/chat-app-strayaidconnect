@@ -1,4 +1,4 @@
-import getUsers from "../actions/getUsers";
+import getUsers from "../actions_users/getUsers";
 import Sidebar from "../components/sidebar/Sidebar";
 import ChatroomList from "./components/ChatroomList";
 import GroupList from "./components/GroupList";

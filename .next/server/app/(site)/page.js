@@ -12,7 +12,7 @@ exports.id = "app/(site)/page";
 exports.ids = ["app/(site)/page"];
 exports.modules = {
 
-/***/ "./request-async-storage.external?93d0":
+/***/ "./request-async-storage.external":
 /*!*****************************************************************************!*\
   !*** external "next/dist/client/components/request-async-storage.external" ***!
   \*****************************************************************************/
@@ -23,7 +23,7 @@ module.exports = require("next/dist/client/components/request-async-storage.exte
 
 /***/ }),
 
-/***/ "./static-generation-async-storage.external?d822":
+/***/ "./static-generation-async-storage.external":
 /*!***************************************************************************************!*\
   !*** external "next/dist/client/components/static-generation-async-storage.external" ***!
   \***************************************************************************************/
@@ -45,7 +45,7 @@ module.exports = require("next/dist/compiled/next-server/app-page.runtime.dev.js
 
 /***/ }),
 
-/***/ "./action-async-storage.external":
+/***/ "../../client/components/action-async-storage.external":
 /*!**********************************************************************************!*\
   !*** external "next/dist\\client\\components\\action-async-storage.external.js" ***!
   \**********************************************************************************/
@@ -56,7 +56,7 @@ module.exports = require("next/dist\\client\\components\\action-async-storage.ex
 
 /***/ }),
 
-/***/ "./request-async-storage.external?0211":
+/***/ "../../client/components/request-async-storage.external":
 /*!***********************************************************************************!*\
   !*** external "next/dist\\client\\components\\request-async-storage.external.js" ***!
   \***********************************************************************************/
@@ -67,7 +67,7 @@ module.exports = require("next/dist\\client\\components\\request-async-storage.e
 
 /***/ }),
 
-/***/ "./static-generation-async-storage.external?137c":
+/***/ "../../client/components/static-generation-async-storage.external":
 /*!*********************************************************************************************!*\
   !*** external "next/dist\\client\\components\\static-generation-async-storage.external.js" ***!
   \*********************************************************************************************/
@@ -594,7 +594,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/next-auth","vendor-chunks/@babel","vendor-chunks/@swc","vendor-chunks/pusher-js","vendor-chunks/tr46","vendor-chunks/tweetnacl","vendor-chunks/node-fetch","vendor-chunks/whatwg-url","vendor-chunks/pusher","vendor-chunks/event-target-shim","vendor-chunks/webidl-conversions","vendor-chunks/abort-controller","vendor-chunks/tweetnacl-util","vendor-chunks/is-base64","vendor-chunks/use-sync-external-store","vendor-chunks/react-hot-toast","vendor-chunks/zustand","vendor-chunks/goober","vendor-chunks/react-icons","vendor-chunks/mime-db","vendor-chunks/axios","vendor-chunks/react-hook-form","vendor-chunks/follow-redirects","vendor-chunks/debug","vendor-chunks/form-data","vendor-chunks/asynckit","vendor-chunks/combined-stream","vendor-chunks/mime-types","vendor-chunks/proxy-from-env","vendor-chunks/ms","vendor-chunks/supports-color","vendor-chunks/delayed-stream","vendor-chunks/clsx","vendor-chunks/has-flag"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2F(site)%2Fpage&page=%2F(site)%2Fpage&appPaths=%2F(site)%2Fpage&pagePath=private-next-app-dir%2F(site)%2Fpage.tsx&appDir=K%3A%5CCode%20playground%5Cchat-app-strayaidconnect%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=K%3A%5CCode%20playground%5Cchat-app-strayaidconnect&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
+var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/@swc","vendor-chunks/next-auth","vendor-chunks/@babel","vendor-chunks/pusher-js","vendor-chunks/tr46","vendor-chunks/tweetnacl","vendor-chunks/node-fetch","vendor-chunks/whatwg-url","vendor-chunks/pusher","vendor-chunks/event-target-shim","vendor-chunks/webidl-conversions","vendor-chunks/abort-controller","vendor-chunks/tweetnacl-util","vendor-chunks/is-base64","vendor-chunks/use-sync-external-store","vendor-chunks/react-hot-toast","vendor-chunks/zustand","vendor-chunks/goober","vendor-chunks/react-icons","vendor-chunks/mime-db","vendor-chunks/axios","vendor-chunks/react-hook-form","vendor-chunks/follow-redirects","vendor-chunks/debug","vendor-chunks/form-data","vendor-chunks/asynckit","vendor-chunks/combined-stream","vendor-chunks/mime-types","vendor-chunks/proxy-from-env","vendor-chunks/ms","vendor-chunks/supports-color","vendor-chunks/delayed-stream","vendor-chunks/clsx","vendor-chunks/has-flag"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2F(site)%2Fpage&page=%2F(site)%2Fpage&appPaths=%2F(site)%2Fpage&pagePath=private-next-app-dir%2F(site)%2Fpage.tsx&appDir=K%3A%5CCode%20playground%5Cchat-app-strayaidconnect%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=K%3A%5CCode%20playground%5Cchat-app-strayaidconnect&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
 module.exports = __webpack_exports__;
 
 })();

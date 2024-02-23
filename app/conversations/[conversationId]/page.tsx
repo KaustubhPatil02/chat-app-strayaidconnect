@@ -1,5 +1,5 @@
-import getConversationById from "@/app/actions/getConversationById";
-import getMessages from "@/app/actions/getMessages";
+import getConversationById from "@/app/actions_users_users_users/getConversationById";
+import getMessages from "@/app/actions_users_users_users_users/getMessages";
 
 import Header from "./components/Header";
 import Body from "./components/Body";

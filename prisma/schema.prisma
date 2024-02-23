@@ -77,7 +77,4 @@ model Message {
   
   senderId String @db.ObjectId
   sender User @relation(fields: [senderId], references: [id], onDelete: Cascade)
-
-  // creatorId String @db.ObjectId
-  // creator User @relation(fields: [creatorId], references: [id])
 }

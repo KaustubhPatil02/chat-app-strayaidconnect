@@ -1,5 +1,5 @@
-import getConversations from "../actions/getConversations";
-import getUsers from "../actions/getUsers";
+import getConversations from "../actions_users/getConversations";
+import getUsers from "../actions_users/getUsers";
 import Sidebar from "../components/sidebar/Sidebar";
 import ConversationList from "./components/ConversationList";
 

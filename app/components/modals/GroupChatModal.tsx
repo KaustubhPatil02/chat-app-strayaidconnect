@@ -25,9 +25,7 @@ interface GroupChatModalProps {
 const GroupChatModal: React.FC<GroupChatModalProps> = ({ 
   isOpen, 
   onClose, 
-  users = [],
-  // new
-  // groups = []
+  users = []
 }) => {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
@@ -55,8 +53,6 @@ const GroupChatModal: React.FC<GroupChatModalProps> = ({
     axios.post('/api/conversations', {
       ...data,
       isGroup: true
-      // new
-      // groupId: data.groupId
     })
     .then(() => {
       router.refresh();
@@ -105,21 +101,6 @@ const GroupChatModal: React.FC<GroupChatModalProps> = ({
                 })} 
                 value={members}
               />
-
-
-              {/* new */}
-              {/* <Select
-                disabled={isLoading}
-                label="Group" 
-                options={groups.map((group) => ({ 
-                  value: group.id, 
-                  label: group.name 
-                }))} 
-                onChange={(value) => setValue('groupId', value, { 
-                  shouldValidate: true 
-                })} 
-                value={watch('groupId')}
-              /> */}
             </div>
           </div>
         </div>
