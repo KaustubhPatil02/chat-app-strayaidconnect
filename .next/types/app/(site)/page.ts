@@ -1,4 +1,4 @@
-// File: K:\Code playground\strayAid-Connect--Chat-App\chat-app-strayaidconnect\app\(site)\page.tsx
+// File: K:\Code playground\chat-app-strayaidconnect\app\(site)\page.tsx
 import * as entry from '../../../../app/(site)/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
