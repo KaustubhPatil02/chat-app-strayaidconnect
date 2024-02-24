@@ -1,4 +1,4 @@
-import getCurrentUser from '@/app/actions_users/getCurrentUser';
+import getCurrentUser from '@/app/actions/getCurrentUser';
 
 import DesktopSidebar from './DesktopSidebar';
 import MobileFooter from './MobileFooter';

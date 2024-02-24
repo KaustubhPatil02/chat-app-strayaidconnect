@@ -27,11 +27,8 @@ const Auth = () => {
             text-gray-900
           "
           >
-            StrayAidConnect
+            StrayAidConnect-chatrooms
         </h2>
-        <h3 className="text-center ">
-          Chatrooms
-        </h3>
       </div>
       <AuthForm />      
   </div>

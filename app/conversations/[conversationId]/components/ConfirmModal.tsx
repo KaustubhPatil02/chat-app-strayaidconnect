@@ -23,35 +23,16 @@ const ConfirmModal: React.FC<ConfirmModalProps> = ({
   const { conversationId } = useConversation();
   const [isLoading, setIsLoading] = useState(false);
   
-  // const onDelete = useCallback(() => {
-  //   setIsLoading(true);
-
-  //   axios.delete(`/api/conversations/${conversationId}`)
-  //   .then(() => {
-  //     onClose();
-  //     router.push('/conversations');
-  //     router.refresh();
-  //   })
-  //   .catch(() => toast.error('Something went wrong!'))
-  //   .finally(() => setIsLoading(false))
-  // }, [router, conversationId, onClose]);
-
   const onDelete = useCallback(() => {
     setIsLoading(true);
-  
+
     axios.delete(`/api/conversations/${conversationId}`)
     .then(() => {
       onClose();
       router.push('/conversations');
       router.refresh();
     })
-    .catch((error) => {
-      if (error.response && error.response.status === 403) {
-        toast.error('You are not authorized to delete this conversation!');
-      } else {
-        toast.error('Something went wrong!');
-      }
-    })
+    .catch(() => toast.error('Something went wrong!'))
     .finally(() => setIsLoading(false))
   }, [router, conversationId, onClose]);
 

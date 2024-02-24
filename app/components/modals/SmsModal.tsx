@@ -17,13 +17,13 @@ import Button from '../Button';
 import { toast } from 'react-hot-toast';
 import { CldImage } from 'next-cloudinary';
 
-interface GroupChatModalProps {
+interface SmsModalProps {
     isOpen?: boolean;
     onClose: () => void;
     // users: User[];
 }
 
-const SmsModal: React.FC<GroupChatModalProps> = ({
+const SmsModal: React.FC<SmsModalProps> = ({
     isOpen,
     onClose,
     // users = [],
@@ -46,12 +46,6 @@ const SmsModal: React.FC<GroupChatModalProps> = ({
         }
     });
 
-// function MyComponent(){
-    
-//     const handleClick = () => {
-//         smsScript();
-//     }
-//     };
 
 // const locationLink = "https://www.google.com/maps/search/?api=1&query=47.5951518,-122.3316393";
     const onSubmit: SubmitHandler<FieldValues> = async (data) => {
@@ -103,7 +97,7 @@ const SmsModal: React.FC<GroupChatModalProps> = ({
                                 label="Location "
                                 id="loc"
                                 errors={errors}
-                                // required
+                                required
                                 register={register}
                             />
                             {/* <span>Upload</span> */}

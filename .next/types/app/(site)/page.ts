@@ -1,8 +1,8 @@
-// File: K:\Code playground\chat-app-strayaidconnect\app\(site)\page.tsx
+// File: C:\Users\kxpat\OneDrive\Desktop\next13-messenger\app\(site)\page.tsx
 import * as entry from '../../../../app/(site)/page.js'
-import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
+import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../../app/(site)/page.js')
+type TEntry = typeof entry
 
 // Check that the entry is a valid entry
 checkFields<Diff<{
@@ -13,14 +13,11 @@ checkFields<Diff<{
   dynamic?: 'auto' | 'force-dynamic' | 'error' | 'force-static'
   dynamicParams?: boolean
   fetchCache?: 'auto' | 'force-no-store' | 'only-no-store' | 'default-no-store' | 'default-cache' | 'only-cache' | 'force-cache'
-  preferredRegion?: 'auto' | 'global' | 'home' | string | string[]
+  preferredRegion?: 'auto' | 'home' | 'edge'
   runtime?: 'nodejs' | 'experimental-edge' | 'edge'
-  maxDuration?: number
   
   metadata?: any
   generateMetadata?: Function
-  viewport?: any
-  generateViewport?: Function
   
 }, TEntry, ''>>()
 
@@ -31,12 +28,6 @@ checkFields<Diff<PageProps, FirstArg<TEntry['default']>, 'default'>>()
 if ('generateMetadata' in entry) {
   checkFields<Diff<PageProps, FirstArg<MaybeField<TEntry, 'generateMetadata'>>, 'generateMetadata'>>()
   checkFields<Diff<ResolvingMetadata, SecondArg<MaybeField<TEntry, 'generateMetadata'>>, 'generateMetadata'>>()
-}
-
-// Check the arguments and return type of the generateViewport function
-if ('generateViewport' in entry) {
-  checkFields<Diff<PageProps, FirstArg<MaybeField<TEntry, 'generateViewport'>>, 'generateViewport'>>()
-  checkFields<Diff<ResolvingViewport, SecondArg<MaybeField<TEntry, 'generateViewport'>>, 'generateViewport'>>()
 }
 
 // Check the arguments and return type of the generateStaticParams function
