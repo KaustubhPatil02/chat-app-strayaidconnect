@@ -731,9 +731,6 @@ video {
 .w-\[21px\] {
   width: 21px;
 }
-.w-auto {
-  width: auto;
-}
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
