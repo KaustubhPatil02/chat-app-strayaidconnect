@@ -48,3 +48,5 @@ Key Features:
 - Group chats and one-on-one messaging
 - Creating and managing chat rooms and channels
 - User profile customization and settings
+- Sms functionality using twilio
+- pin a message etc, soon to be implemented 
