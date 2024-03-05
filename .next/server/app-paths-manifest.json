@@ -1,5 +1,1 @@
-{
-  "/conversations/page": "app/conversations/page.js",
-  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
-  "/(site)/page": "app/(site)/page.js"
-}
+{}
