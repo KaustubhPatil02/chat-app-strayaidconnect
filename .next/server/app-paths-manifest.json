@@ -1,1 +1,4 @@
-{}
+{
+  "/conversations/page": "app/conversations/page.js",
+  "/(site)/page": "app/(site)/page.js"
+}
