@@ -1,4 +1,27 @@
+### Tech Stack used
 
+
+```js
+Front-end:
+    Nextjs Framework
+    Typescript
+    TailwindCss
+    React-Icons library
+
+Back-end:
+    Prisma
+    Prisma for db schema design
+    Mongodb for backend connectivity
+
+API's:
+  -Google oAuth
+  -Cloudinary
+  -NextAuth
+  -Pusher (for sending messages between clients)
+
+Twilio (sms)
+Twilio client
+```
   ### Setup .env file
 
 
