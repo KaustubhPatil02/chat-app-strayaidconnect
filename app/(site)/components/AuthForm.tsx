@@ -11,6 +11,8 @@ import Input from "@/app/components/inputs/Input";
 import AuthSocialButton from './AuthSocialButton';
 import Button from "@/app/components/Button";
 import { toast } from "react-hot-toast";
+import Loading from '../../conversations/loading'; // import your loading component
+
 
 type Variant = 'LOGIN' | 'REGISTER';
 
@@ -105,17 +107,20 @@ const AuthForm = () => {
   }
 
   return (
-    <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-      <div
-        className="
-        bg-white
-          px-4
-          py-8
-          shadow
-          sm:rounded-lg
-          sm:px-10
-        "
-      >
+  <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+      {isLoading ? (
+        <Loading /> // Render your loading component when isLoading is true
+      ) : (
+        <div
+          className="
+          bg-white
+            px-4
+            py-8
+            shadow
+            sm:rounded-lg
+            sm:px-10
+          "
+        >
         <form
           className="space-y-6"
           onSubmit={handleSubmit(onSubmit)}
@@ -219,6 +224,7 @@ const AuthForm = () => {
           </div>
         </div>
       </div>
+      )}
     </div>
   );
 }

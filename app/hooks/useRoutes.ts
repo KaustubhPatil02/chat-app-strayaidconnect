@@ -1,13 +1,21 @@
-import { useMemo } from "react";
+import { useState, useMemo } from "react";
 import { usePathname } from "next/navigation";
 import { HiChat } from 'react-icons/hi';
 import { HiArrowLeftOnRectangle, HiUsers } from 'react-icons/hi2';
 import { signOut } from "next-auth/react";
 import useConversation from "./useConversation";
+import Loading from '../conversations/loading'; // import your loading component
 
 const useRoutes = () => {
   const pathname = usePathname();
   const { conversationId } = useConversation();
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleSignOut = async () => {
+    setIsLoading(true);
+    await signOut();
+    setIsLoading(false);
+  };
 
   const routes = useMemo(() => [
     { 
@@ -23,12 +31,12 @@ const useRoutes = () => {
     //   active: pathname === '/users'
     // },
     {
-      label: 'Logout', 
-      onClick: () => signOut(),
+      label: isLoading ? 'Loading...' : 'Logout', 
+      onClick: handleSignOut,
       href: '#',
-      icon: HiArrowLeftOnRectangle, 
+      icon: isLoading ? Loading : HiArrowLeftOnRectangle, 
     }
-  ], [pathname, conversationId]);
+  ], [pathname, conversationId, isLoading]);
 
   return routes;
 };
