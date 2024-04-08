@@ -16,35 +16,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/conversations/page.js"
     ],
-    "/conversations/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/conversations/layout.js"
-    ],
     "/conversations/loading": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/conversations/loading.js"
     ],
-    "/conversations/[conversationId]/page": [
+    "/conversations/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/conversations/[conversationId]/page.js"
-    ],
-    "/users/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/users/page.js"
-    ],
-    "/users/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/users/layout.js"
-    ],
-    "/users/loading": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/users/loading.js"
+      "static/chunks/app/conversations/layout.js"
     ]
   }
 }
