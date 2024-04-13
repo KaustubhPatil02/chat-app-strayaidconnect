@@ -21,15 +21,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/conversations/layout.js"
     ],
-    "/conversations/[conversationId]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/conversations/[conversationId]/page.js"
-    ],
     "/conversations/loading": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/conversations/loading.js"
+    ],
+    "/conversations/[conversationId]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/conversations/[conversationId]/page.js"
     ],
     "/users/page": [
       "static/chunks/webpack.js",
