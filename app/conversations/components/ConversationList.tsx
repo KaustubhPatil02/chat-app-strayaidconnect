@@ -101,7 +101,7 @@ const ConversationList: React.FC<ConversationListProps> = ({
             <div className="text-2xl font-bold text-neutral-800">
               Chatrooms
             </div>
-            {/* <div 
+            <div 
               onClick={() => setIsModalOpen(true)} 
               className="
                 rounded-full 
@@ -114,7 +114,7 @@ const ConversationList: React.FC<ConversationListProps> = ({
               "
             >
               <MdOutlineGroupAdd size={20} />
-            </div> */}
+            </div>
           </div>
           {items.map((item) => (
             <ConversationBox

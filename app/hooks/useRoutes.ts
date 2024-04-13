@@ -24,12 +24,12 @@ const useRoutes = () => {
       icon: HiChat,
       active: pathname === '/conversations' || !!conversationId
     },
-    // { 
-    //   label: 'Users', 
-    //   href: '/users', 
-    //   icon: HiUsers, 
-    //   active: pathname === '/users'
-    // },
+    { 
+      label: 'Volunteers ', 
+      href: '/users', 
+      icon: HiUsers, 
+      active: pathname === '/users'
+    },
     {
       label: isLoading ? 'Loading...' : 'Logout', 
       onClick: handleSignOut,
