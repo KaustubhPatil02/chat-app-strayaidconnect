@@ -2,5 +2,5 @@
   "/conversations/[conversationId]/page": "app/conversations/[conversationId]/page.js",
   "/conversations/page": "app/conversations/page.js",
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
-  "/api/conversations/[conversationId]/seen/route": "app/api/conversations/[conversationId]/seen/route.js"
+  "/(site)/page": "app/(site)/page.js"
 }

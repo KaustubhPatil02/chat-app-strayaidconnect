@@ -116,13 +116,17 @@ const ConversationList: React.FC<ConversationListProps> = ({
               <MdOutlineGroupAdd size={20} />
             </div>
           </div>
-          {items.map((item) => (
+          {items.length > 0 ? (
+          items.map((item) => (
             <ConversationBox
               key={item.id}
               data={item}
               selected={conversationId === item.id}
             />
-          ))}
+          ))
+        ) : (
+          <div>Please wait till verification, it usually take 2-3 days, till we verify your provided information</div>
+        )}
         </div>
       </aside>
     </>

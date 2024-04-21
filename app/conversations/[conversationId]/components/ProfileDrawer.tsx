@@ -107,7 +107,7 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
                           <div className="text-sm text-gray-500">
                             {statusText}
                           </div>
-                          <div className="flex gap-10 my-8">
+                          {/* <div className="flex gap-10 my-8">
                             <div onClick={() => setConfirmOpen(true)} className="flex flex-col gap-3 items-center cursor-pointer hover:opacity-75">
                               <div className="w-10 h-10 bg-neutral-100 rounded-full flex items-center justify-center">
                                 <IoTrash size={20} />
@@ -116,59 +116,61 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
                                 Delete
                               </div>
                             </div>
-                          </div>
+                          </div> */}
                         <div className="w-full pb-5 pt-5 sm:px-0 sm:pt-0">
                         <dl className="space-y-8 px-4 sm:space-y-6 sm:px-6">
-                          {data.isGroup && (
-                            <div>
-                              <dt 
-                                className="
-                                  text-sm 
-                                  font-medium 
-                                  text-gray-500 
-                                  sm:w-40 
-                                  sm:flex-shrink-0
-                                "
-                              >
-                                Emails
-                              </dt>
-                              <dd 
-                                className="
-                                  mt-1 
-                                  text-sm 
-                                  text-gray-900 
-                                  sm:col-span-2
-                                "
-                              >
-                                {data.users.map((user) => user.email).join(', ')}
-                              </dd>
-                            </div>
-                          )}
-                          {!data.isGroup && (
-                            <div>
-                              <dt 
-                                className="
-                                  text-sm 
-                                  font-medium 
-                                  text-gray-500 
-                                  sm:w-40 
-                                  sm:flex-shrink-0
-                                "
-                              >
-                                Email
-                              </dt>
-                              <dd 
-                                className="
-                                  mt-1 
-                                  text-sm 
-                                  text-gray-900 
-                                  sm:col-span-2
-                                "
-                              >
-                                {otherUser.email}
-                              </dd>
-                            </div>
-                          )}
+                        {data.isGroup && (
+  <div>
+    <span 
+      className="
+        text-xl
+        font-medium 
+        text-black 
+        sm:w-40 
+        sm:flex-shrink-0
+      "
+    >
+      Emails and Account Names
+    </span>
+    <dd 
+      className="
+        mt-1 
+        text-sm 
+        text-gray-900 
+        sm:col-span-2
+      "
+    >
+      {data.users.map((user, index) => (
+        <div key={index}>{`${user.email}: ${user.name}`}</div>
+      ))}
+    </dd>
+  </div>
+)}
+{!data.isGroup && (
+  <div>
+    <dt 
+      className="
+        text-sm 
+        font-medium 
+        text-gray-500 
+        sm:w-40 
+        sm:flex-shrink-0
+      "
+    >
+      Email
+    </dt>
+    <dd 
+      className="
+        mt-1 
+        text-sm 
+        text-gray-900 
+        sm:col-span-2
+      "
+    >
+      {`${otherUser.email}: ${otherUser.name}`}
+    </dd>
+  </div>
+)}
                           {!data.isGroup && (
                             <>
                               <hr />
